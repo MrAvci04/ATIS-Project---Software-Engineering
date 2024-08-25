@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="634.0" style="-fx-background-color: #CCE6FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gsix.ATIS.client.user.ShowMessageBoxController">
+
+
+    <children>
+        <ListView fx:id="sent_LV" layoutX="13.0" layoutY="100.0" prefHeight="220.0" prefWidth="300.0" />
+        <ListView fx:id="received_LV" layoutX="322.0" layoutY="100.0" prefHeight="220.0" prefWidth="300.0" />
+        <Label layoutX="69.0" layoutY="75.0" prefHeight="20.0" prefWidth="121.0" text="   Sent Messages" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+        <Label layoutX="382.0" layoutY="75.0" prefHeight="20.0" prefWidth="134.0" text="Received Messages">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+        <Label layoutX="218.0" layoutY="28.0" prefHeight="36.0" prefWidth="190.0" text="My Messages Page">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+        <Button fx:id="back_Btn" layoutX="24.0" layoutY="341.0" mnemonicParsing="false" onAction="#goBack" prefHeight="29.0" prefWidth="90.0" style="-fx-background-color: #00246B;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+        <Button fx:id="SoS_Btn" layoutX="560.0" layoutY="326.0" mnemonicParsing="false" onAction="#OpenSosCall" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: red; -fx-background-radius: 60;" text="SOS" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></Button>
+    </children>
+
+
+</AnchorPane>

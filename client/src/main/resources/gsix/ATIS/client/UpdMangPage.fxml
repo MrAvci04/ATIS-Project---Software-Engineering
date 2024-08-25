@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="gsix.ATIS.client.systemmanager.UpdMangPageBoundary" style="-fx-background-color: #CCE6FF;">
+
+
+    <VBox spacing="10" alignment="CENTER" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="20">
+        <Label text="Update Manager" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+        <ComboBox fx:id="communityIdComboBox" promptText="Select Community" />
+
+        <ListView fx:id="userListView" prefHeight="200" prefWidth="300" />
+
+        <TextField fx:id="userNameTextField" promptText="User Name" />
+        <TextField fx:id="firstNameTextField" promptText="First Name" />
+        <TextField fx:id="lastNameTextField" promptText="Last Name" />
+        <PasswordField fx:id="passwordField" promptText="Password" />
+
+        <Button text="Update Manager" onAction="#updateManager" />
+        <Button text="Back" onAction="#goBack" />
+    </VBox>
+</AnchorPane>

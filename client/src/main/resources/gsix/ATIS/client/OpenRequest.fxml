@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="584.0" prefWidth="718.0" style="-fx-background-color: #CCE6FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gsix.ATIS.client.user.OpenRequestBoundary">
+    <children>
+            <Label layoutX="97.0" layoutY="118.0" text="Requested Operation">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+            <Label layoutX="97.0" layoutY="252.0" text="Status">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+            <Label layoutX="96.0" layoutY="317.0" text="Requester ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+            <Label layoutX="97.0" layoutY="384.0" text="Volunteer ID">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+            <Label fx:id="task_id_Lbl" layoutX="500.0" layoutY="500.0" prefHeight="17.0" prefWidth="171.0" text="Label" visible="false" />
+            <Label fx:id="requster_id_Lbl" layoutX="235.0" layoutY="317.0" text="Label">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+            <Label fx:id="volunteer_id_Lbl" layoutX="231.0" layoutY="384.0" text="No One Yet">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+            <Label fx:id="time_Lbl" layoutX="500.0" layoutY="500.0" text="Label" visible="false" />
+      <TextField fx:id="requested_op_TxtFld" layoutX="290.0" layoutY="161.0" prefHeight="64.0" prefWidth="210.0" promptText="Type here">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="status_Lbl" layoutX="235.0" layoutY="252.0" text="status">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+            <Button fx:id="back_Btn" alignment="CENTER" layoutX="112.0" layoutY="476.0" mnemonicParsing="false" onMouseClicked="#backBtnClicked" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #00246B;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+        <Button fx:id="SoS_Btn" layoutX="586.0" layoutY="449.0" mnemonicParsing="false" onAction="#OpenSosCall" prefHeight="90.0" prefWidth="90.0" style="-fx-background-radius: 120; -fx-background-color: red;" text="SOS Call" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+      </Button>
+          <Label layoutX="235.0" layoutY="27.0" prefHeight="35.0" prefWidth="210.0" text="Task Information">
+              <font>
+                  <Font name="System Bold Italic" size="24.0" />
+              </font>
+          </Label>
+            <Button fx:id="save_Btn" alignment="CENTER" layoutX="395.0" layoutY="477.0" mnemonicParsing="false" onMouseClicked="#saveBtnClicked" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #3398FF;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="selectedOP_cmbBx" layoutX="290.0" layoutY="119.0" prefHeight="25.0" prefWidth="210.0" promptText="Pick Task" />
+    </children>
+</AnchorPane>

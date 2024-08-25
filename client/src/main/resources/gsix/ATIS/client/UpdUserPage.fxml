@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="gsix.ATIS.client.systemmanager.UpdUserPageBoundary" style="-fx-background-color: #CCE6FF;">
+
+    <VBox spacing="10" alignment="CENTER" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="20">
+        <Label text="Update User" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+        <ListView fx:id="userListView" prefHeight="200" prefWidth="300" />
+
+        <TextField fx:id="userNameTextField" promptText="User Name" />
+        <TextField fx:id="firstNameTextField" promptText="First Name" />
+        <TextField fx:id="lastNameTextField" promptText="Last Name" />
+        <PasswordField fx:id="passwordField" promptText="Password" />
+
+        <Button text="Update User" onAction="#updateUser" />
+        <Button text="Back" onAction="#goBack" />
+    </VBox>
+</AnchorPane>

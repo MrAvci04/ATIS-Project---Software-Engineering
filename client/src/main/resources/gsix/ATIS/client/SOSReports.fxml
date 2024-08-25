@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="633.0" prefWidth="818.0" style="-fx-background-color: #CCE6FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gsix.ATIS.client.manager.SOSReports">
+   <children>
+      <BarChart fx:id="barChart" layoutX="29.0" layoutY="165.0" prefHeight="374.0" prefWidth="636.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="btnBack" layoutX="72.0" layoutY="554.0" mnemonicParsing="false" onAction="#backToManagerHomePage" prefHeight="33.0" prefWidth="120.0" style="-fx-background-color: #00246B;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="SoS_Btn" layoutX="570.0" layoutY="531.0" mnemonicParsing="false" onAction="#OpenSosCall" prefHeight="80.0" prefWidth="80.0" style="-fx-background-radius: 40; -fx-background-color: red;" text="SOS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font></Button>
+      <Pane layoutX="72.0" layoutY="14.0" prefHeight="151.0" prefWidth="651.0">
+         <children>
+            <Label layoutX="219.0" text="SOS Reports">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Text layoutX="23.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose community ">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="startDate" editable="false" layoutX="122.0" layoutY="102.0" promptText="Start Date" />
+            <Text layoutX="23.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="From Date">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="326.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To Date">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="endDate" editable="false" layoutX="400.0" layoutY="102.0" promptText="End Date" />
+            <ComboBox fx:id="comboBoxCommunity" layoutX="210.0" layoutY="60.0" prefHeight="26.0" prefWidth="139.0" promptText="Pick Community" style="-fx-background-color: #96989C;" />
+            <Button fx:id="show_Btn" layoutX="456.0" layoutY="58.0" mnemonicParsing="false" onAction="#onGenerateReport" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #3398FF;" text="Show Report" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="371.0" prefWidth="443.0" style="-fx-background-color: #CCE6FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gsix.ATIS.client.manager.SendMessageToUser">
+   <children>
+      <TextField fx:id="messageTB" alignment="TOP_LEFT" layoutX="31.0" layoutY="97.0" prefHeight="193.0" prefWidth="400.0" promptText="Decline reason:" />
+      <Button fx:id="BtnClose" layoutX="33.0" layoutY="315.0" mnemonicParsing="false" onAction="#Close" prefHeight="29.0" prefWidth="79.0" style="-fx-background-color: #00246B;" text="Close" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="BtnSend" layoutX="225.0" layoutY="315.0" mnemonicParsing="false" onAction="#SendDeclineMsgToUser" prefHeight="29.0" prefWidth="79.0" style="-fx-background-color: #6BC76F;" text="Send" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Text layoutX="98.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sending Decline message" wrappingWidth="332.8000244140625">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="requester of task :" wrappingWidth="127.73670196533203">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="taskIdTV" layoutX="167.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Task ID" wrappingWidth="59.6708984375">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="SoS_Btn" layoutX="371.0" layoutY="300.0" mnemonicParsing="false" onAction="#OpenSosCall" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: red; -fx-background-radius: 60;" text="SOS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

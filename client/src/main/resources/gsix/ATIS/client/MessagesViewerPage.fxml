@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="644.0" style="-fx-background-color: #CCE6FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gsix.ATIS.client.manager.ShowMessagesViewer">
+   <children>
+      <ListView fx:id="Msent_LV" layoutX="16.0" layoutY="84.0" prefHeight="245.0" prefWidth="300.0" />
+      <ListView fx:id="Mreceived_LV" layoutX="327.0" layoutY="84.0" prefHeight="245.0" prefWidth="300.0" />
+      <Label layoutX="103.0" layoutY="59.0" prefHeight="20.0" prefWidth="120.0" text="   Sent Messages" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="405.0" layoutY="59.0" prefHeight="20.0" prefWidth="137.0" text="Received Messages">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="222.0" layoutY="21.0" prefHeight="38.0" prefWidth="200.0" text="Manager Inbox">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="Mback_Btn" layoutX="16.0" layoutY="350.0" mnemonicParsing="false" onAction="#MgoBack" prefHeight="29.0" prefWidth="106.0" style="-fx-background-color: #00246B;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="SoS_Btn" layoutX="567.0" layoutY="335.0" mnemonicParsing="false" onAction="#OpenSosCall" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: red; -fx-background-radius: 60;" text="SOS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
